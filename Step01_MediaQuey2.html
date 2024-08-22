@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_MediaQuey2.html</title>
+    <style>
+        p { display: none;}
+        @media(max-width:767px) {
+            #one {
+                display: block;
+            }
+        }
+        @media(max-width:991px) and (min-width:768px) {
+            #two {
+                display: block;
+            }
+        }
+        @media(min-width:992px) {
+            #three {
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p id="one">
+        현재 device의 width는 767px 이하입니다.
+    </p>
+    <p id="two">
+        현재 device의 width는 768px 이상 991px 이하입니다.
+    </p>
+    <p id="three">
+        현재 device의 width는 992px 이상입니다.
+    </p>
+</body>
+</html>

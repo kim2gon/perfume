@@ -1,0 +1,152 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+/********************** reset **********************/
+
+html,body,h1,h2,ul,li,p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {vertical-align: bottom;}
+
+body {
+  background-image: url(images/bg.png);
+  background-attachment: fixed;
+}
+
+/********************** header **********************/
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header {
+  background: #151515;
+  height: 400px;
+  line-height: 400px;
+  /* 가운데 정렬 */
+  text-align: center;
+  color: #807776;
+  font-family: "Vollkorn", serif; color: rgb(109, 105, 105); font-size: 150px;
+  overflow: hidden;
+}
+
+.header h1 {
+  font-size: 200px;
+  letter-spacing: -0.001em;
+  word-spacing: 200px;
+  white-space: nowrap;
+  color: #807776;
+}
+
+.header:hover  h1{
+  color: white;
+  word-spacing: 300px;
+  transition: all 1s;
+}
+
+.header .point {
+  position: relative;
+  top: 0px;
+  width: 0;
+  transition: top 1s;
+}
+
+.header:hover .point{
+	top:-400px;
+	width:650px;
+}
+
+/********************** gnb **********************/
+
+.gnb-wrapper {
+  /* rgba의 a는 alpha(투명도) 0.7=70% */
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.gnb-wrapper .gnb {
+  display: inline-block;
+  overflow: hidden;
+  background-color: #807776;
+  border-radius: 30px;
+  padding: 0 20px;
+  vertical-align: bottom;
+}
+
+.gnb li {
+	float:left;
+}
+
+.gnb li a {
+	display:block;
+  /* a태그의 범위를 넓혀서 클릭범위를 넓힘 */
+	padding:0 20px;
+	height:50px;
+	line-height:50px;
+	border: 5px solid transparent;
+  /* =border: 5px solid #807776 */
+}
+
+.gnb li a:hover {
+	border-bottom-color: #222;
+  /* =border: 5px solid #222 */
+}
+
+/********************** body **********************/
+
+.grid {
+  /* block요소는 width값을 가지고 margin:0 auto 하면 중앙정렬한다 */
+  width: 960px;
+  margin: 100px auto;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.grid li {
+  width: 300px;
+  margin: 10px;
+  float: left;
+  /* clearfix도 가능 */
+}
+
+ .grid li:nth-child(2),
+ .grid li:nth-child(5),
+ .grid li:nth-child(8) {
+    position: relative;
+    margin-top: -50px;
+ }
+
+.grid .container {
+  background: #93572e;
+  border-bottom:10px solid #4b260a;
+  border-radius: 20px;
+  /* padding: 0,20px,20px,20px; */
+  overflow: hidden;
+}
+
+.grid .container h2 {
+  color: white;
+  margin: 20px;
+}
+
+.grid .container p {
+  color: rgba(255,255,255,0.7);
+  margin: 20px;
+}
+
+.grid li .container::before {
+  content:url(images/ac-top.png);
+  display: block;
+  height: 50px;
+}

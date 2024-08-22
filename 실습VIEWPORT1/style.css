@@ -1,0 +1,92 @@
+body, ul, li, h3, p{
+	margin:0px;
+	padding:0;
+}
+
+a	{
+	text-decoration:none;
+	color: gray;
+}
+
+li {
+	list-style-type:none;
+}
+
+img {
+	vertical-align:bottom;
+}
+
+/*
+	1. 배경색 f4f4f4를 설정하고
+	큰 향수 이미지를 배경 이미지로 붙여주세요.
+
+    2. Sidebar 레이아웃만 잡아주세요.
+	너비값 300px
+
+	태블릿 1024px
+	모바일 768px
+
+*/
+body {
+	background: #f4f4f4;
+	background-image: url(images/big-perfume.png);
+	background-repeat: no-repeat;
+}
+.sidebar {
+	width: 300px;
+	background: black;
+	text-align: center;
+	margin: 0 auto;
+}
+.logo {
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+.gnb {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: bottom;
+	float: left;
+}
+
+.contents {
+	margin: 0 auto ;
+	width: 960px;
+	overflow: hidden;
+	background: #f4f4f4;
+	text-align: center;
+	color: purple;
+	padding: 30px;
+}
+.contents li {
+	width: 300px;
+	float: left;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+	{}
+}
+@media(min-width:769) and (max-width:1024px) {
+	{}
+}
